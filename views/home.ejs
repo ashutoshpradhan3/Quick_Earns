@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part-Time Jobs</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="s1.css">
+    <link rel="stylesheet" href="animations.css">
+    <style>
+        /* Style for the dropdown menu */
+        #jobs-dropdown {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            z-index: 1000;
+            /* Ensure it's above other elements */
+        }
+
+        #jobs:hover #jobs-dropdown {
+            display: block;
+        }
+
+        /* Adjust position of the dropdown menu */
+        #jobs-dropdown ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #jobs-dropdown ul ul {
+            margin-left: 20px;
+            /* Indent submenus */
+        }
+
+        #jobs-dropdown li {
+            margin-bottom: 5px;
+        }
+
+        #jobs-dropdown a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        #jobs-dropdown a:hover {
+            text-decoration: underline;
+        }
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+        
+        
+        
+        
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 style="color: rgb(3, 121, 87);">Qu<span class="exclamation">!</span>cK Earns</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li id="jobs"><a href="#">Jobs</a>
+                        <!-- Dropdown menu for jobs -->
+                        <div id="jobs-dropdown">
+                            <ul>
+                                <li><strong>Category 2</strong>
+                                    <ul>
+                                        <li><a href="#">IT jobs</a></li>
+                                        <li><a href="#">Fresher jobs</a></li>
+                                        <li><a href="#">Jobs in Delhi</a></li>
+                                        <li><a href="#">Jobs by Category</a></li>
+                                    </ul>
+                                </li>
+                                <li><strong>Category 3</strong>
+                                    <ul>
+                                        <li><a href="#">Sales jobs</a></li>
+                                        <li><a href="#">MNC jobs</a></li>
+                                        <li><a href="#">Jobs in Mumbai</a></li>
+                                        <li><a href="#">Jobs by Skills</a></li>
+                                    </ul>
+                                </li>
+                                <li><strong>Category 3</strong>
+                                    <ul>
+                                        <li><a href="#">Marketing jobs</a></li>
+                                        <li><a href="#">Remote jobs</a></li>
+                                        <li><a href="#">Jobs in Hyderabad</a></li>
+                                        <li><a href="#">Jobs by Location</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><strong>Category 3</strong>
+                                    <ul>
+                                        <li><a href="#">Data Science jobs</a></li>
+                                        <li><a href="#">Work from home jobs</a></li>
+                                        <li><a href="#">Jobs in Chennai</a></li>
+                                        <li><a href="#">Jobs by designation</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><strong>Category 3</strong>
+                                    <ul>
+                                        <li><a href="#">HR jobs</a></li>
+                                        <li><a href="#">Walk-in jobs</a></li>
+                                        <li><a href="#">Jobs in Pune</a></li>
+                                        <li><a href="#">Create free job alert</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li id="jobs"><a href="#">Companies</a>
+                        <!-- Dropdown menu for jobs -->
+                        <div id="jobs-dropdown">
+                            <ul>
+                                <li><strong>Category 2</strong>
+                                    <ul>
+                                        <li><a href="#">11outof11</a></li>
+                                        <li><a href="#">Amplify Education</a></li>
+                                        <li><a href="#">BELAY</a></li>
+                                        <li><a href="#">Carta Healthcare</a></li>
+                                    </ul>
+                                </li>
+                                <li><strong>Category 3</strong>
+                                    <ul>
+                                        <li><a href="#">DataCamp</a></li>
+                                        <li><a href="#">Daybreak Health</a></li>
+                                        <li><a href="#">Duolingo</a></li>
+                                        <li><a href="#">Elevate K-12</a></li>
+                                        <li><a href="#">Vida Health</a></li>
+                                        <li><a href="#">Welocalize</a></li>
+                                    </ul>
+                                </li>
+                                <li><strong>Category 3</strong>
+                                    <ul>
+                                        <li><a href="#">FlexProfessionals</a></li>
+                                        <li><a href="#">Foodsmart</a></li>
+                                        <li><a href="#">Hazel Health</a></li>
+                                        <li><a href="#">Kaplan</a></li>
+                                        <li><a href="#">TELUS International</a></li>
+                                        <li><a href="#">Twinkl</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><strong>Category 3</strong>
+                                    <ul>
+                                        <li><a href="#">LanguageLine Solutions</a></li>
+                                        <li><a href="#"> Latitude</a></li>
+                                        <li><a href="#">Mango Languages</a></li>
+                                        <li><a href="#">ModSquad</a></li>
+                                        <li><a href="#"> SteadyMD</a></li>
+                                        <li><a href="#">Talkspace</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><strong>Category 3</strong>
+                                    <ul>
+                                        <li><a href="#">National University</a></li>
+                                        <li><a href="#">OneDigital</a></li>
+                                        <li><a href="#">Pathrise</a></li>
+                                        <li><a href="#">Randstad</a></li>
+                                        <li><a href="#">Robert Half International</a></li>
+                                        <li><a href="#">Social Element</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <div id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Find Exciting Part-Time Jobs</h2>
+                <p>Discover opportunities that fit your schedule and skills.</p>
+                <a href="/User Manual.ejs" id="getStartedButton" class="btn btn-primary" onclick="showForm()">Get Started</a>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <section id="search" style="background-color: #38b3a1;">
+        <div class="container" style="background-color: #38b3a1;">
+            
+            <h2 style="font-size: 36px; text-align: center; color: white; background-color: black; padding: 10px; border-radius:15px">Find Part-Time Jobs</h2>
+            
+
+
+
+
+
+            <form>
+                <input type="text" placeholder="Keyword">
+                <input type="text" placeholder="Location">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="featured-jobs" style="background-color: #38b3a1;">
+        <div class="container">
+            <h2 style="font-size: 36px; text-align: center; color: white; background-color: black; padding: 5px 10px; border-radius:15px">Featured Jobs</h2>
+
+            <div class="row">
+            
+
+                <div class="col-md-4">
+                    <div class="job" style="border-radius: 30px;">
+                        <div class="job-info">
+                            <h3>Web Developer</h3>
+                            <p>Google</p>
+                            <p>
+                                Join our team to innovate, code, and enhance user experiences, 
+                                shaping the digital landscape while balancing flexibility with 
+                                impactful contributions.</p>
+                            <button type="button" class="btn btn-outline-primary apply-now-btn">Apply Now</button>
+                        </div>
+                        <div class="job-image bg-primary">
+                            <img src="https://source.unsplash.com/150x150/?web developer" alt="Web Developer Image">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="job" style="border-radius: 30px;">
+                        <div class="job-info">
+                            <h3>Data Engineer</h3>
+                            <p>MicroSoft</p>
+                            <p>Join us part-time as a data engineer and revolutionize data infrastructure. 
+                                Drive insights, innovate, and shape the future of data-driven 
+                                decisions impactful contributions.
+                            </p>
+                            <button type="button" class="btn btn-outline-primary apply-now-btn">Apply Now</button>
+                        </div>
+                        <div class="job-image bg-primary">
+                            <img src="https://source.unsplash.com/150x150/?data engineer" alt="Web Developer Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="job" style="border-radius: 30px;">
+                        <div class="job-info" style="border-radius: 40px;">
+                            <h3>Cybersecurity Analyst</h3>
+                            <p>Meta</p>
+                            <p>
+                                Part-time cybersecurity analyst role: Safeguard digital assets and detect threats with flexible hours 
+                                for impactful contributions in shaping a secure digital landscape.</p>
+                                <button type="button" class="btn btn-outline-primary apply-now-btn">Apply Now</button>
+                        </div>
+                        <div class="job-image bg-primary">
+                            <img src="https://source.unsplash.com/150x150/?cybersecurity" alt="Web Developer Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="job" style="border-radius: 30px;">
+                        <div class="job-info">
+                            <h3>Blockchain Developer</h3>
+                            <p>Amazon</p>
+                            <p>
+                                Join us as a part-time blockchain developer to shape the future of transactions. 
+                                With flexible hours, contribute impactful innovations in a dynamic environment.</p>
+                                <button type="button" class="btn btn-outline-primary apply-now-btn">Apply Now</button>
+                        </div>
+                        <div class="job-image bg-primary">
+                            <img src="https://source.unsplash.com/150x150/?blockchain" alt="Web Developer Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="job" style="border-radius: 30px;">
+                        <div class="job-info">
+                            <h3>IOT Specialist</h3>
+                            <p>IBM</p>
+                            <p>Step into the future with our part-time IOT Specialist positions, where the forefront 
+                                of cutting-edge technology meets flexible and dynamic work opportunities.</p>
+                                <button type="button" class="btn btn-outline-primary apply-now-btn">Apply Now</button>
+                        </div>
+                        <div class="job-image bg-primary">
+                            <img src="https://source.unsplash.com/150x150/?IoT" alt="Web Developer Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="job" style="border-radius: 30px;">
+                        <div class="job-info">
+                            <h3>DevOps Engineer</h3>
+                            <p>Accenture</p>
+                            <p>Dive into the future with our part-time DevOps Engineer roles, where innovation in 
+                                technology intersects with dynamic and flexible work opportunities.</p>
+                                <button type="button" class="btn btn-outline-primary apply-now-btn">Apply Now</button>
+                        </div>
+                        <div class="job-image bg-primary">
+                            <img src="https://source.unsplash.com/150x150/?DevOps" alt="Web Developer Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="modal fade" id="applyModal" tabindex="-1" role="dialog" aria-labelledby="applyModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="applyModalLabel">Apply for Job</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <section id="about" style="background-color: #38b3a1; padding: 50px 0;">
+        <div class="container" style="border: 1px solid #ddd; border-radius: 20px; padding: 40px; font-family: 'Roboto', sans-serif;">
+            <h2 style="font-size: 36px; text-align: center; margin-bottom: 30px; color: #333; font-weight: bold;">About Us</h2>
+            <div class="about-content" style="line-height: 1.6;">
+                <p style="font-size: 18px; color: #555;">Welcome to Part-Time Jobs! We are dedicated to connecting job seekers with exciting part-time opportunities that fit their skills and schedule. Whether you're a student looking to earn extra income, a parent seeking flexibility, or someone exploring new career paths, we've got you covered.</p>
+                <p style="font-size: 18px; color: #555;">At Part-Time Jobs, we partner with a diverse range of companies, from startups to multinational corporations, to bring you a wide variety of job openings. Our platform offers a user-friendly search interface, making it easy for you to find the perfect part-time job.</p>
+                <p style="font-size: 18px; color: #555;">Stay updated with the latest trends in part-time employment, salary insights, and in-demand skills through our blog and newsletters. We are committed to empowering you with the information and resources you need to succeed in your part-time career.</p>
+                <p style="font-size: 18px; color: #555;">Join our community today and embark on a rewarding part-time journey with Part-Time Jobs!</p>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="#" class="btn btn-primary" style="background-color: #007bff; border-color: #007bff; font-size: 20px; font-weight: bold;">Join Now</a>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="jobArticles" style="background-color: #38b3a1;">
+        <div class="container" style="padding: 20px;" >
+            <h2 style="text-align: center; color: #333; font-size: 24px; margin-bottom: 20px;">Job Search Articles</h2>
+            <div class="article" style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; margin-bottom: 20px;" onclick="redirectToArticle1()" onmouseover="this.style.backgroundColor='#f5f5f5'" onmouseout="this.style.backgroundColor='#fff'">
+                <h3 style="color: #555; font-size: 20px; margin-bottom: 10px;">Top 10 Tips for Finding Part-Time Jobs</h3>
+                <p style="color: #777; font-size: 16px;">Looking for part-time work? Check out these top tips to help you land the perfect job while balancing other commitments.</p>
+            </div>
+            <div class="article" style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; margin-bottom: 20px;" onclick="redirectToArticle2()" onmouseover="this.style.backgroundColor='#f5f5f5'" onmouseout="this.style.backgroundColor='#fff'">
+                <h3 style="color: #555; font-size: 20px; margin-bottom: 10px;">The Benefits of Part-Time Work: Why It Could Be Right for You</h3>
+                <p style="color: #777; font-size: 16px;">Considering part-time work? Explore the advantages it offers, from flexibility to gaining valuable experience.</p>
+            </div>
+            <div class="article" style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; margin-bottom: 20px;" onclick="redirectToArticle3()" onmouseover="this.style.backgroundColor='#f5f5f5'" onmouseout="this.style.backgroundColor='#fff'">
+                <h3 style="color: #555; font-size: 20px; margin-bottom: 10px;">How to Stand Out in Your Job Search</h3>
+                <p style="color: #777; font-size: 16px;">Competition for jobs can be tough. Learn how to make your application shine and impress potential employers.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+    
+    
+
+
+
+    
+
+    <section id="testimonials" style="background-color: #38b3a1; padding: 50px 0;">
+        <div class="container">
+            <h2 style="font-size: 36px; text-align: center; margin-bottom: 30px; color: #333; font-weight: bold;">Testimonials</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"I found my dream part-time job through this website. The search process was easy and intuitive, and I highly recommend it to anyone looking for flexible work opportunities."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://source.unsplash.com/100x100/?Men" alt="User" style="border-radius: 50%; margin-right: 10px;">
+                            <h3>Nakul</h3>
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"I've been using this website for months and have landed multiple part-time gigs that perfectly fit my schedule. It's a game-changer for anyone seeking flexible work options."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://source.unsplash.com/100x100/?web developer" alt="User" style="border-radius: 50%; margin-right: 10px;">
+                            <h3>Rishank</h3>
+                            <p>Content Writer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"I was skeptical at first, but after landing my first part-time job through this platform, I'm a believer. The opportunities are endless, and the support team is fantastic."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://source.unsplash.com/100x100/?cse engineer" alt="User" style="border-radius: 50%; margin-right: 10px;">
+                            <h3>Ashutosh</h3>
+                            <p>Marketing Specialist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+                     
+              
+    
+    
+    
+
+
+    <section id="contact" style="background-color: #38b3a1; padding: 50px 0;">
+        <div class="container" style="border: 1px solid #ddd; border-radius: 20px; padding: 40px; font-family: 'Roboto', sans-serif;">
+            <h2 style="font-size: 42px; text-align: center; margin-bottom: 30px; color: #333; font-weight: bold;">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-info" style="font-size: 20px; color: #555;">
+                        <p><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: #007bff;"></i>Location: My Study Point, Jalandhar, Punjab, India</p>
+                        <p><i class="fas fa-phone-alt" style="margin-right: 10px; color: #007bff;"></i>Phone: +91 9508930544</p>
+                        <p><i class="fas fa-envelope" style="margin-right: 10px; color: #007bff;"></i>Email: ashutosh.pradhan@lpu.in</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-icons" style="font-size: 28px; text-align: center;">
+                        <a href="https://github.com/ashutoshpradhan3" style="color: #333; margin-right: 20px;"><i class="fab fa-github" style="color: #333;"></i></a>
+                        <a href="https://www.linkedin.com/in/ashutosh-pradhan808" style="color: #333; margin-right: 20px;"><i class="fab fa-linkedin" style="color: #333;"></i></a>
+                        <a href="https://www.instagram.com/3ashu__3?igsh=MTk3b3l2bGozYzA3eQ==" style="color: #333; margin-right: 20px;"><i class="fab fa-instagram" style="color: #333;"></i></a>
+                        <a href="#" style="color: #333;"><i class="fab fa-facebook" style="color: #333;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <footer>
+        <div class="container">
+           
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer">
+                        <a href="#"><i class="footer" style="color: white;">Browse Jobs</i></a><br>
+                        <a href="#"><i class="footer" style="color: white;">About</i></a><br>
+                        <a href="#"><i class="footer" style="color: white;">Help Centre</i></a><br>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer">
+                        <a href="#"><i class="footer" style="color: white;">Browse Companies</i></a><br>
+                        <a href="#"><i class="footer" style="color: white;">Countries</i></a><br>
+                        <a href="#"><i class="footer" style="color: white;">Security</i></a><br>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer">
+                        <a href="#"><i class="footer" style="color: white;">Salaries</i></a><br>
+                        <a href="#"><i class="footer" style="color: white;">Post a job</i></a><br>
+                        <a href="#"><i class="footer" style="color: white;">Privacy Centre and Ad Choices</i></a><br>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer">
+                        <a href="#"><i class="footer" style="color: white;">Indeed Events</i></a><br>
+                        <a href="#"><i class="footer" style="color: white;">Terms</i></a><br>
+                        <a href="#"><i class="footer" style="color: white;">FAQ</i></a><br>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Ensure jQuery library is included -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            var timer; // Variable to store the timer ID
+        
+            // Show dropdown menu when mouse enters "Jobs" button or dropdown
+            $('#jobs, #jobs-dropdown').mouseover(function () {
+                // Clear any existing timer
+                clearTimeout(timer);
+                $('#jobs-dropdown').show();
+            });
+        
+            // Hide dropdown menu when mouse leaves "Jobs" button or dropdown
+            $('#jobs, #jobs-dropdown').mouseleave(function () {
+                // Set a timer to hide the dropdown after 500 milliseconds
+                timer = setTimeout(function() {
+                    $('#jobs-dropdown').hide();
+                }, 500);
+            });
+        });
+        
+           
+        
+
+        $(document).ready(function () {
+            $('.apply-now-btn').click(function () {
+                $('#applyModal').modal('show');
+            });
+        });
+
+
+        function redirectToArticle1() {
+            window.location.href = 'https://www.flexjobs.com/blog/post/how-to-make-money-from-home-no-work-experience/'; // Replace 'article1.html' with the actual URL of your first article
+        }
+    
+        // Function to redirect to the second article
+        function redirectToArticle2() {
+            window.location.href = 'https://www.flexjobs.com/blog/post/top-jobs-that-require-no-experience-and-how-to-land-one/'; // Replace 'article2.html' with the actual URL of your second article
+        }
+    
+        // Function to redirect to the third article
+        function redirectToArticle3() {
+            window.location.href = 'https://www.flexjobs.com/blog/post/remote-jobs-that-pay-well-dont-require-a-bachelors-degree/'; // Replace 'article3.html' with the actual URL of your third article
+        }
+        
+            
+        function showForm() {
+            window.location.href = "apply.ejs"; // Replace "form.html" with the actual URL of your form page
+        }
+        
+
+
+    </script>
+</body>
+
+</html>
